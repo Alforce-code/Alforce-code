@@ -95,9 +95,10 @@ li a {
 
 .image-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Ensures spacing between images */
     align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    gap: 20px; /* Adds consistent spacing between images */
 }
 
 .image2,
@@ -162,4 +163,42 @@ footer {
 
 .social-icons a:hover {
     color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 20px; /* Ensures spacing between rows on small screens */
+    }
+
+    .image2,
+    .image3 {
+        width: 100%; /* Makes images full-width */
+        max-width: 300px; /* Sets a max-width for images */
+    }
+
+    .profile img {
+        width: 100%; /* Makes the main profile image responsive */
+        max-width: 300px;
+    }
+
+    .content {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
 }
