@@ -98,7 +98,7 @@ li a {
     justify-content: space-between; /* Ensures spacing between images */
     align-items: center;
     flex-wrap: wrap; /* Ensures wrapping on smaller screens */
-    gap: 20px; /* Adds consistent spacing between images */
+    gap: 10px; /* Smaller gap between images */
 }
 
 .image2,
