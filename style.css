@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4c508a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+
+    
+    
+}
+
+header h1 {
+    margin: 0;
+    align-items: center;
+    padding-left: 530px;
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #1a73e8;
+        border-radius: 5px;
+    }
+}
+
+
+/* Main Content */
+.content {
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    top: 1000px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    border-radius: 20%;
+    border: 3px solid #1a73e8;
+    margin-bottom: 1rem;
+    box-shadow: 0  4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; /* Add spacing between the images */
+}
+
+.image2,
+.image3,
+.profile img {
+    display: block; /* Ensure each image behaves as a block element */
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid #a5b1c0; /* Same border color for consistency */
+    box-shadow: 0 4px 6px rgba(67, 1, 1, 0.2);
+}
+
+.square-rounded{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile h2 {
+    margin: 0.5rem;
+
+}
+.profile p{
+
+     
+    align-items: flex-start;
+     border: 1px solid #ccc;
+     height: 100px;
+     margin-inline-end: auto;
+}
+
+.items{
+    text-align:center;
+}
+
+.tags span {
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+    background: #f1f1f1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.flag {
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Overview Section */
+.section {
+    margin: 1rem 0;
+}
+
+.roles span {
+    display: inline-block;
+    background: #e6f4ff;
+    color: #1a73e8;
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4c5868;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: rgb(79, 108, 250);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: white;
+    width: 100px;
+}
+
+.social-icons a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Menu Button Styling */
+.menu-button {
+    background-color: #631059;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Align to the right */
+    
+    border-radius: 5px;
+    
+}
+
+.move-down {
+
+    margin-top: 200px;
+}
+
+.form{
+    color: #ccc;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+    padding-left: 100px;
+    padding-right: 200px;
+    width: 5px;
+    left: 383px;
+    right: 100px;
+    margin-top: 210px;
+    
+    
+}
+
+
+
+li{
+    position: relative;
+    list-style: none;
+    width: 150px;
+    padding: 6px;
+    background: #3e3f46;
+    z-index: calc(1 * var(--i));
+    height: 40px;
+}
+
+li:hover{
+    background: #996fae;
+    transform: translateX(-50px);
+}
+
+li::before{
+    font-family: "FontAwesome";
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-icon);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 20px;
+    background: #2e3133;
+    transform-origin: right;
+    transform: scaleY(45deg);
+    transition: 0.5s;
+}
+li:hover::before{
+    background: #7b5190;
+}
+
+li::after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: #53383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+
+}
+
+li:hover::after{
+    background: #86589d;
+
+}
+
+li a{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+
+}
+
+li:hover a{
+    color: #fff;
+}
+
+li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+    
+}
+
+

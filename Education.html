@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Javas.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Timeline</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    color: #f4ed17;
+    font-style: italic;
+}
+
+.timeline {
+    position: relative;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 800px;
+    border-left: 3px solid #1a73e8;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -6rem;
+    top: 0;
+    background: #e0c21c;
+    color: #000;
+    font-weight: bold;
+    text-decoration-color: aqua;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 4rem;
+}
+
+.timeline-content {
+    background: #fff;
+    border: 1px solid #f5f4f4;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(2, 2, 2, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0 0 0.5rem;
+}
+
+.timeline-content a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.timeline-content button {
+    background: #59626d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.timeline-content button:hover {
+    background: #b3b8be;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+    <header>
+        <div class="container">
+      <h1>{ Alforce };</h1>
+</header>
+
+
+<div class="menu-container">
+    <button id="menuButton" class="menu-button">☰ Menu</button>
+    <form class="form" id="form">
+    <ul id="menuList" class="menuList">
+    <ul>
+    <li style="--i:6;" data-icon="&#xf121">
+       <a href="Overview.html">Overview</a>
+    </li>
+
+    <li style="--i:5;" data-icon="&#xf19d">
+        <a href="Education.html">Education</a>
+     </li>
+
+     <li style="--i:4;" data-icon="&#xf085">
+        <a href="skills.html">Skills</a>
+     </li>
+
+     <li style="--i:3;" data-icon="&#xf073">
+        <a href="Experience.html">Experience</a>
+     </li>
+
+     <li style="--i:2;" data-icon="&#xf091">
+        <a href="Awards.html">Awards</a>
+
+        <li style="--i:1;" data-icon="&#xf0ae">
+            <a href="#">Projects</a>
+         </li>
+ 
+     </ul>
+
+
+    </div>
+
+
+<div class="content">
+  <div class="profile">
+      <div class="image-container">
+      <img src="DEBUGGER.jpg" alt="Alforce Jnr">
+      <div class="image2" id="image2">
+          <img src="This1.jpg" alt="image2">
+      </div>
+      <div class="image3" id="image3">
+          <img src="CD.jpg" alt="image3">
+      </div>
+
+  </div>
+      <h2>Thandazani Kalua (Alforce Jnr)</h2>
+      <p>He/Him<br>Born 7<sup>th</sup> January</p>
+      <p>Matchawani Village<br>T/A Mwankhunikira<br>Rumphi</p>
+      <div class="tags">
+          <span>✝️ C.C.A.P Christian</span>
+          <span>🟢 Single</span>
+          <span>Malawian </span>
+          <span>🗣️ English, Tumbuka (Mother tongue), Chichewa</span>
+      </div>
+  </div>
+
+    <header>
+        <h1>EDUCATION</h1>
+        <p><em>"The only way to do great work is to love what you do."</em><br>--Steve Jobs</p>
+    </header>
+    <main>
+       
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span>2017-2021</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Rumphi Secondary School (RUSESCHO)</h3>
+                    <a href="#">Malawi School Certificate of Education (MSCE)</a>
+                    <p>Passed my MSCE exams with distinction</p>
+                    <button>read more</button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span>Early 2022</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Worked as a Science Teacher at Makwelero Private Secondary School</h3>
+                    <a href="#"></a>
+                    <p>We had a 90% passrate </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span>Early 2023</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Joined MUBAS</h3>
+                    <a href="#">A member of P.O.C.I.T.S, a MUBAS IT Society</a>
+                    <p>Member of Digital Advocacy</p>
+                </div>
+            </div>
+        </div>
+                
+    </main>
+      
+
+    <footer>
+        <p>Connect With Me Via These:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100075118731845"><i class="fab fa-facebook"></i></a>
+            <a href=" "><i class="fab fa-x-twitter"></i></a>
+            <a href=" https://www.linkedin.com/in/Thandazani Kalua"><i class="fab fa-linkedin"></i></a>
+            <a href="https://t.me/@Alsolearn22 "><i class="fab fa-telegram"></i></a>
+            <a href="https://wa.me/0886601803"><i class="fab fa-whatsapp"></i></a>
+            <a href=" "><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="Javas.js"></script>
+</body>
+</html>
+
+</body>
+</html>

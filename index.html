@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphics Animation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .button-container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .button-container h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px white;
+    }
+
+    .button {
+      background: #222;
+      color: white;
+      font-size: 20px;
+      padding: 15px 40px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      position: relative;
+      transition: box-shadow 0.5s ease-in-out;
+    }
+
+    .button:hover {
+      box-shadow: 0 0 20px white, 0 0 50px white;
+    }
+
+    #text-overlay {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 4em;
+      text-shadow: 0 0 10px white;
+      text-align: center;
+      display: none;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="button-container" id="first-page">
+    <h1>Welcome to<br> Alforce's Portifolio - Discover My Journey, Skills and Vision</h1>
+    <button class="button" id="openButton">Get Started!</button>
+  </div>
+
+  <div id="text-overlay"></div>
+
+  <div id="second-page">
+    <h1 id="text"></h1>
+    <img src="" width="200px" class="flower" />
+  </div>
+
+  <script>
+    // Canvas setup
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Star animation
+    const stars = [];
+    for (let i = 0; i < 100; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 2,
+        speed: Math.random() * 0.5,
+      });
+    }
+
+    function animateStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach((star) => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "white";
+        ctx.fill();
+        star.y += star.speed;
+        if (star.y > canvas.height) star.y = 0;
+      });
+      requestAnimationFrame(animateStars);
+    }
+
+    animateStars();
+
+    // Redirect to another HTML page
+    const openButton = document.getElementById("openButton");
+    openButton.addEventListener("click", () => {
+      // Redirect to another HTML file, e.g., "nextPage.html"
+      window.location.href = "Overview.html";
+    });
+  </script>
+</body>
+</html>

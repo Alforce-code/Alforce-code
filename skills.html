@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Javas.js"></script>
+</head>
+
+<body>
+        <header>
+              <div class="container">
+            <h1>{ Alforce };</h1>
+    </header>
+
+
+ 
+    <div class="menu-container">
+      <button id="menuButton" class="menu-button">☰ Menu</button>
+      <form class="form" id="form">
+      <ul id="menuList" class="menuList">
+      <ul>
+      <li style="--i:6;" data-icon="&#xf121">
+         <a href="Overview.html">Overview</a>
+      </li>
+
+      <li style="--i:5;" data-icon="&#xf19d">
+          <a href="Education.html">Education</a>
+       </li>
+
+       <li style="--i:4;" data-icon="&#xf085">
+          <a href="skills.html">Skills</a>
+       </li>
+
+       <li style="--i:3;" data-icon="&#xf073">
+          <a href="Experience.html">Experience</a>
+       </li>
+
+       <li style="--i:2;" data-icon="&#xf091">
+          <a href="Awards.html">Awards</a>
+
+          <li style="--i:1;" data-icon="&#xf0ae">
+              <a href="#">Projects</a>
+           </li>
+   
+       </ul>
+
+
+      </div>
+
+
+
+
+
+    <div class="content">
+        <div class="profile">
+            <div class="image-container">
+            <img src="DEBUGGER.jpg" alt="Alforce Jnr">
+            <div class="image2" id="image2">
+                <img src="This1.jpg" alt="image2">
+            </div>
+            <div class="image3" id="image3">
+                <img src="CD.jpg" alt="image3">
+            </div>
+
+        </div>
+            <h2>Thandazani Kalua (Alforce Jnr)</h2>
+            <p>He/Him<br>Born 7<sup>th</sup> January</p>
+            <p>Matchawani Village<br>T/A Mwankhunikira<br>Rumphi</p>
+            <div class="tags">
+                <span>✝️ C.C.A.P Christian</span>
+                <span>🟢 Single</span>
+                <span>Malawian </span>
+                <span>🗣️ English, Tumbuka (Mother tongue), Chichewa</span>
+            </div>
+        </div>
+
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+          }
+          header {
+            background-color: #0078D7;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+          }
+          header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #3d78a8;
+            padding-right: 350px;
+            text-emphasis: center;
+          }
+          header p {
+            font-size: 1.2rem;
+           
+          }
+          .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+          }
+          section {
+            margin-bottom: 2rem;
+        
+          }
+          h2 {
+            color: #051828;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #313336;
+            display: inline-block;
+            text-align: center; 
+          }
+          h3{
+            color: #051828;
+           
+            font-size: 1.5rem;
+            border-bottom: 2px solid #313336;
+          
+            text-align: center; 
+          }
+
+          
+          p {
+            margin: 10px 0;
+          }
+          .skills-list, .cloud-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+          }
+          .skills-list div, .cloud-list div {
+            background: #e9f5ff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #0078D7;
+          }
+          .personal-skills ul {
+            list-style: none;
+            padding: 0;
+          }
+          .personal-skills ul li {
+            padding: 10px 0;
+            font-weight: bold;
+          }
+          @media (max-width: 768px) {
+            .skills-list, .cloud-list {
+              flex-direction: column;
+            }
+          }
+        </style>
+      </head>
+      <body>
+    
+      
+        <div class="container">
+          
+          <section>
+            <h3>SKILLS</h3>
+        
+          </section>
+      
+          <section>
+            <h2>Professional Skills</h2>
+            <h3>Software Development</h3>
+            <p>
+              I am proficient in a number of software development fields, including web development, mobile application development, desktop development and embedded programming. I specialize in the following programming languages and tools:
+            </p>
+            <div class="skills-list">
+              <div>C++</div>
+              <div>PHP</div>
+              <div>JavaScript</div>
+              <div>Python</div>
+              <div>Java</div>
+              <div>React-Native</div>
+              <div>Docker</div>
+            </div>
+          </section>
+      
+          <section>
+            <h2>Cloud Architecting</h2>
+            <p>
+              I have strong knowledge of most cloud platforms currently available. I design, develop and implement highly performant cloud solutions.
+            </p>
+            <div class="cloud-list">
+              <div>AWS</div>
+              <div>Google Cloud</div>
+              <div>Azure</div>
+            </div>
+          </section>
+      
+          <section>
+            <h2>Instructor</h2>
+            <p>
+              I have a passion for sharing knowledge and have trained many individuals in computer programming and computer literacy in general.
+            </p>
+          </section>
+      
+          <section class="personal-skills">
+            <h2>Personal Skills</h2>
+            <p>As an individual, my strongest attributes are:</p>
+            <ul>
+              <li>Interpersonal skills</li>
+              <li>Self-Motivated & Commitment</li>                        
+              <li>Work ethic (e.g., ability to work long hours without complaining)</li> 
+              <li>Networking</li>
+              <li>Disciplined</li>
+              <li> Teamwork</li>
+              <li>Self-management (e.g., time management, goal setting, etc.)</li>
+              <li>Stress management (e.g., taking time out, prioritizing tasks, etc.)</li>
+            </ul>
+          </section>
+        </div>
+    <footer>
+        <p>Connect With Me Via These:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100075118731845"><i class="fab fa-facebook"></i></a>
+            <a href=" "><i class="fab fa-x-twitter"></i></a>
+            <a href=" https://www.linkedin.com/in/Thandazani Kalua"><i class="fab fa-linkedin"></i></a>
+            <a href="https://t.me/@Alsolearn22 "><i class="fab fa-telegram"></i></a>
+            <a href="https://wa.me/0886601803"><i class="fab fa-whatsapp"></i></a>
+            <a href=" "><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="Javas.js"></script>
+</body>
+</html>
